@@ -1,9 +1,10 @@
-// adding the function to the window makes it globally available
-window.calculateSumListener = function() {
-	//Return the value of the input #firstNumber
-	var stringA = document.getElementById("firstNumber").value;
-	//Return the value of the input #secondNumber
-	var stringB = document.getElementById("secondNumber").value;
+window.calculateSumListener = function calculateSumListener() {
+    //Devuelve el valor del input #firstNumber
+    var stringA = document.getElementById("firstNumber").value;
+    //Devuelve el valor del input #secondNumber
+    var stringB = document.getElementById("secondNumber").value;
 
-	//your code goes here
+    let result = parseInt(stringA) + parseInt(stringB);
+
+    document.getElementById("resultNumber").value = result;
 };
